@@ -1,54 +1,48 @@
-//index.js
-//获取应用实例
-const app = getApp()
-
+/*********************************Page()函数******************************
+*1.Page()函数用来注册一个页面，接受一个object参数，其指定页面的初始数据、声明周期函数、事件处理函数
+*/
+const app = getApp();//获取应用实例
+let flag="";
+let color="";
 Page({
+  //1.页面的初始数据
   data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    name: 'index页面',
+    color:"window",
   },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
-  onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse){
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
-        })
-      }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
+  //不能使用箭头函数，否则this为null
+  clickFun:function(){
+    console.log("点击了文字！！");
+    if(flag){
+      color = "window-red";
+      flag = false;//
+    }else{
+      color = "window";
+      flag = true;
     }
-  },
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
+    //更新数据
     this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
+      color:color
+    });
+  },
+  //1.页面初始化 options为页面跳转所带来的参数
+  onLoad: function (options) {
+
+  },
+  //2.页面渲染完成
+  onReady:function(){
+    
+  },
+  //3.页面显示
+  onShow:function(){
+    
+  },
+  //4.页面隐藏
+  onHide:function(){
+   
+  },
+  //5.页面关闭
+  onUnload:function(){
+    
   }
-})
+})//e
