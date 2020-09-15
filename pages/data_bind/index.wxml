@@ -1,0 +1,5 @@
+<!--index.wxml-->
+<view class="container">
+   <text>{{name}}</text>
+   <button catchtap="clickFun">数据绑定</button>
+</view>
