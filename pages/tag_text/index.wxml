@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <text>{{name}}</text>
+  <text>小明</text>
+  <text>小李</text>
+</view>

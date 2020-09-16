@@ -1,6 +1,7 @@
 {
   "pages":[
-    
+    "pages/form_input/index",
+    "pages/data_bind_double/index",
     "pages/considerKnowledge/wxml_template/index",
     "pages/considerKnowledge/wxml_if/index",
     "pages/considerKnowledge/wxml_for/index",

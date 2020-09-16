@@ -1,0 +1,7 @@
+/**index.wxss(样式)**/
+.window {
+  color: blue;
+}
+.window-red {
+  color: red;
+}
