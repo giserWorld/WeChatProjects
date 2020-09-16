@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+   <h2>{{name}}</h2>
+   <div>
+      
+   </div>
+</view>

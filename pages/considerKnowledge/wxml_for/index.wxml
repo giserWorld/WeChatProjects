@@ -1,0 +1,4 @@
+<!--index.wxml-->
+<view class="container">
+   <text wx:for="{{list}}" wx:key="key">{{item.name}}</text>
+</view>

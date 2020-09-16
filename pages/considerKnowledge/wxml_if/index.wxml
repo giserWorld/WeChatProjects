@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+   <h2>{{name}}</h2>
+   <div>
+      <div wx:if="{{type==1}}">飞机</div>
+      <div wx:if="{{type==2}}">汽车</div>
+      <button bindtap="clickFun">改变状态属性</button>
+   </div>
+</view>

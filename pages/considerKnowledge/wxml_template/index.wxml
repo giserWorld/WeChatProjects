@@ -1,0 +1,14 @@
+<!--定义template模板-->
+<template name="temp_name1">
+  <view>
+    name: {{name}}, age: {{age}}
+  </view>
+</template>
+
+<view class="container">
+   <h2>{{name}}</h2>
+   <div>
+      <template is="temp_name1" data="{{...user1}}"></template>
+      <template is="temp_name1" data="{{name:'username',age:66}}"></template>  
+   </div>
+</view>

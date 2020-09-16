@@ -1,5 +1,10 @@
 {
   "pages":[
+    
+    "pages/considerKnowledge/wxml_template/index",
+    "pages/considerKnowledge/wxml_if/index",
+    "pages/considerKnowledge/wxml_for/index",
+    "pages/considerKnowledge/index/index",  
     "pages/data_bind/index",
     "pages/index/index",
     "pages/logs/logs"
