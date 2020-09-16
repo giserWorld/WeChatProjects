@@ -1,5 +1,8 @@
 {
   "pages":[
+    "pages/tag_text/index",
+    "pages/form_input/index",
+    "pages/data_bind_double/index",
     "pages/data_bind/index",
     "pages/index/index",
     "pages/logs/logs"

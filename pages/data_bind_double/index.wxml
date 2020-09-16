@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<view class="container">
+   <h2>{{name}}</h2>
+   <div>
+      <input model:value="{{inputValue}}"/><p/>
+      <button bindtap="clickFun">改变数据</button><p/>
+      <button bindtap="getInputVlaue">获取输入框中的值</button><p/>
+   </div>
+</view>
